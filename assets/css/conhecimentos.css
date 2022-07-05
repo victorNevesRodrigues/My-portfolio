@@ -17,7 +17,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: minmax(20rem, 3fr) minmax(20rem, 7fr);
+    grid-template-columns: minmax(24rem, 3fr) minmax(20rem, 7fr);
 }
 
 nav {
@@ -28,19 +28,58 @@ nav {
     background-color: #161623ff;
     color: #F0F8ee;
     text-align: center;
+    background-color: #4B0082;
 }
 
 nav a {
     text-decoration: none;
     padding: 1rem 0;
     background-color: #fff;
+    /* background-color: rgba(255, 255, 255, 0.1); */
     margin-bottom: 1rem;
     border-radius: 5rem;
 }
 
+nav h2 {
+    padding: 1rem 0 1.5rem;
+}
+
 #dinamicContent {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    font-size: 5rem;
+    padding: 0rem 2rem;
+    background-color: #4B0082;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#dinamicContent div h2 {
+    color: #fff;
+    font-weight: 800;
+}
+
+#dinamicContent h3 {
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+#dinamicContent div p {
+    margin: 0rem 0rem 2rem;
+    /* display: none; */
+}
+
+#dinamicContent h4 {
+    font-weight: 700;
+    margin: 0rem 0 0.5rem;
+}
+
+#dinamicContent div{
+    background-color: #161623aa;
+    color: #fffd;
+    border-radius: 1rem;
+    margin: 3rem 0;
+    padding: 1rem 0.5rem 0.5rem;
+}
+
+@media screen and (min-width: 768px){
+    
 }
 
