@@ -13,6 +13,7 @@ html {
 body {
     width: 100vw;
     max-width: 100%;
+    background-color: #4B0082;
 }
 
 .container {
@@ -20,29 +21,78 @@ body {
     grid-template-columns: minmax(24rem, 3fr) minmax(20rem, 7fr);
 }
 
-nav {
+aside {
     display: flex;
     flex-direction: column;
     font-size: 3rem;
-    padding: 1rem;
+    padding: 1.5rem 0.3rem;
     background-color: #161623ff;
-    color: #F0F8ee;
+    color: #746182;
     text-align: center;
     background-color: #4B0082;
 }
 
-nav a {
+aside a {
     text-decoration: none;
     padding: 1rem 0;
     background-color: #fff;
-    /* background-color: rgba(255, 255, 255, 0.1); */
     margin-bottom: 1rem;
     border-radius: 5rem;
+    font-weight: bold;
+    line-height: 3rem;
 }
 
-nav h2 {
-    padding: 1rem 0 1.5rem;
+aside a:hover {
+    padding: 1.4rem;
+    background-color: #d9ded7;
 }
+
+aside h2 {
+    padding: 1rem 0 1.5rem;
+    color: #F0F8ee;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 0rem 3rem;
+    background-color: #161623aa;
+}
+
+header a h2 {
+    font-size: 2.5rem;
+    color: #F0F8ee;
+    padding: 2.5rem 1.5rem;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header a h2:hover {
+    color: #fff;
+}
+
+header ul {
+    display: flex;
+}
+
+header a li{
+    padding: 2.5rem 1.5rem;
+    color: #F0F8ee;
+    display: inline-block;
+    list-style: none;
+}
+
+header li:hover {
+    color: #262626;
+    background-color: #fff;
+    transition: border-radius 0.2s linear;
+    border-radius: 1rem;
+}
+
 
 #dinamicContent {
     padding: 0rem 2rem;

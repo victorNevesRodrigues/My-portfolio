@@ -21,6 +21,47 @@ body {
     margin-bottom: 10rem;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 0rem 3rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header a h2 {
+    font-size: 2.5rem;
+    color: #F0F8ee;
+    padding: 2.5rem 1.5rem;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header a h2:hover {
+    color: #fff;
+}
+
+header ul {
+    display: flex;
+}
+
+header a li{
+    padding: 2.5rem 1.5rem;
+    color: #F0F8ee;
+    display: inline-block;
+    list-style: none;
+}
+
+header li:hover {
+    color: #262626;
+    background-color: #fff;
+    transition: border-radius 0.2s linear;
+    border-radius: 1rem;
+}
+
 .conhecimentos {
     background-color: var(--primary-color);
 }
