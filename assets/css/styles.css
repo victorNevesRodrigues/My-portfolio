@@ -18,7 +18,7 @@ body {
     background-color: var(--primary-color);
     width: 100vw;
     max-width: 100%;
-    margin-bottom: 10rem;
+    overflow-x: hidden;
 }
 
 header{
@@ -62,9 +62,122 @@ header li:hover {
     border-radius: 1rem;
 }
 
+.aboutMe {
+    padding: 13rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    inset: -1rem 14rem;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.container:hover::before {
+    inset: -2rem 0rem;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    inset: 0.8rem;
+    border-radius: 50%;
+}
+
+.imgContainer {
+    position: absolute;
+    background-color: #fff;
+    inset: 3rem;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.imgContainer img {
+    position: absolute;
+    left: 1.2rem;
+    width: 106%;
+    top: -7rem;
+    object-fit: cover;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.whoAmIContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+}
+
+.whoAmI {
+    font-size: 3rem;
+    background: -webkit-linear-gradient( #00ccff, #d400d4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 5rem;
+}
+
+.whoAmI h4 {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.btnContainer {
+    width: 100%;
+}
+
+.btn {
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    background: linear-gradient( #00ccff, #d400d4);
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+.btn a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.btn a:active{
+    opacity: 0.5;
+}
+
 .conhecimentos {
     background-color: var(--primary-color);
 }
+
 .conhecimentos h2 {
     display: block;
     font-size: 4rem;
@@ -159,6 +272,16 @@ header li:hover {
 .card img {
     width: 50%;
     z-index: -1;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #F0F8ee;
+    padding: 1rem 0rem;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
 }
 
 @media screen and (min-width: 770px) and (max-width: 1004px){
