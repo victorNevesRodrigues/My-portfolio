@@ -1,4 +1,3 @@
-console.log('deu bom')
 document.querySelectorAll('[dinamic-nav]').forEach(link => {
     const conteudo = document.getElementById('dinamicContent')
 

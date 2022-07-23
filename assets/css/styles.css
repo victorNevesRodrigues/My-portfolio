@@ -197,7 +197,7 @@ header li:hover {
 
 .frontEndContainer, .backEndContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(29rem, 31rem));
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 31rem));
     color: rebeccapurple;
     background-color: #161623f0;
     gap: 2rem;
@@ -252,12 +252,13 @@ header li:hover {
     background-color: #F0F8FF;
     border-radius: 1.5rem;
     width: 80%;
-    padding-top: 1rem;
     margin: 1rem auto 0rem;
     height: 5rem;
     color: #7b68ee;
     font-weight: bold;
-    
+    display: flex;   
+    align-items: center;
+    justify-content: center;
 }
 
 .card a:hover {
@@ -284,8 +285,296 @@ footer {
     margin-top: 3rem;
 }
 
-@media screen and (min-width: 770px) and (max-width: 1004px){
+.substituteH2 {
+    display: none;
+}
+
+
+
+header.on .substituteH2 {
+    display: none;
+}
+
+header.on .mainH2{
+    display: none;
+}
+
+header.on .menuToggle {
+    position: fixed;
+    right: 3rem;
+    top: 3rem;
+}
+
+header.on .menuToggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+header.on .menuToggle .two {
+    opacity: 0;
+}
+
+header.on .menuToggle .three {
+    transform: rotate(-45deg) translate(9px, -8px);
+}
+
+header.on {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+header.on nav {
+    display: initial;
+    z-index: 6;
+    color: #fff;
+}
+
+header.on nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+header.on nav ul a li {
+    color: #fff;
+    padding: 0.5rem 0rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #ff0047;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+body.on {
+    overflow: hidden;
+}
+
+body.on #scrollPath {
+    display: none;
+}
+
+@media screen and (max-width: 2800px){
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contentContainer {
+        width: 80%;
+    }
+
+    .frontEndContainer, .backEndContainer {
+        grid-template-columns: repeat(auto-fit, minmax(38rem, 31rem));
+        padding: 0.3rem;
+    }
+
+    .card {
+        font-size: 3rem;
+    }
+
+    .whoAmI {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 2048px){
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contentContainer {
+        width: 70%;
+    }
+
     .frontEndContainer {
-        grid-template-columns: repeat(3, minmax(27rem, 27rem));
+        grid-template-columns: repeat(auto-fit, minmax(38rem, 31rem));
+    }
+
+    .card {
+        font-size: 3rem;
+    }
+
+    .whoAmI {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1631px){
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contentContainer {
+        width: 100%;
+
+    }
+
+    .card {
+        font-size: 3rem;
+    }
+
+    .mainH2 {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .whoAmI {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1004px){
+    .frontEndContainer {
+        grid-template-columns: repeat(auto-fit, minmax(39rem, 27rem));
+    }
+}
+
+@media screen and (min-width: 830px) and (max-width: 899px){
+    .frontEndContainer {
+        grid-template-columns: repeat(auto-fit, minmax(31rem, 31rem));
+    }
+
+    .aboutMe {
+        padding: 9rem 0rem;
+        flex-direction: column;
+    }
+
+    .whoAmIContainer {
+        padding-top: 2rem;
+    }
+
+    .card {
+        font-size: 2rem;
+        margin: 0rem 1rem;    
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 830px){
+    .frontEndContainer {
+        grid-template-columns: repeat(auto-fit, minmax(29rem, 31rem));
+        gap: initial;
+        grid-row-gap: 2rem;
+    }
+
+    .aboutMe {
+        padding: 9rem 0rem;
+        flex-direction: column;
+    }
+
+    .whoAmIContainer {
+        padding-top: 3rem;
+        padding-left: 3rem
+    }
+
+    .card {
+        font-size: 2rem;
+        margin: 0rem 1rem;    
+    }
+
+    .mainH2 {
+        display: initial;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .menuToggle {
+        width: 4rem;
+        height: 3rem;
+
+    }
+
+    .one, .two, .three {
+        background-color: #fff;
+        height: 0.5rem;
+        width: 100%;
+        margin: 0.6rem auto;
+        transition-duration: 0.5s;
+    }
+}
+
+@media screen and (max-width: 499px){
+    .substituteH2 {
+        display: initial;
+    }
+    
+    .mainH2 {
+        display: none;
+    }
+    
+    .frontEndContainer {
+        grid-template-columns: repeat(auto-fit, minmax(29rem, 31rem));
+
+    }
+
+    .aboutMe {
+        padding: 9rem 0rem;
+        flex-direction: column;
+    }
+
+    .whoAmIContainer {
+        padding: 3rem 2rem 0rem;
+    }
+
+    .whoAmI {
+        font-size: 2.5rem;
+        padding: 0rem 2rem 0rem;
+    }
+
+    .imgContainer img {
+        top: -5rem;
+    }
+
+    .btn {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .container::before {
+        inset: -1rem 9rem;
+    }
+
+    .card {
+        font-size: 2rem;
+        margin: 0rem 1.5rem;  
+    }
+
+    .conhecimentos h2, .containerStacks h3 {
+        font-size: 3rem;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .menuToggle {
+        width: 4rem;
+        height: 3rem;
+    }
+
+    .one, .two, .three {
+        background-color: #fff;
+        height: 0.5rem;
+        width: 100%;
+        margin: 0.6rem auto;
+        transition-duration: 0.5s;
     }
 }
