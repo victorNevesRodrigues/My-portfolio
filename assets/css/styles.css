@@ -21,47 +21,6 @@ body {
     overflow-x: hidden;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2.5rem;
-    padding: 0rem 3rem;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-header a h2 {
-    font-size: 2.5rem;
-    color: #F0F8ee;
-    padding: 2.5rem 1.5rem;
-}
-
-header a{
-    text-decoration: none;
-}
-
-header a h2:hover {
-    color: #fff;
-}
-
-header ul {
-    display: flex;
-}
-
-header a li{
-    padding: 2.5rem 1.5rem;
-    color: #F0F8ee;
-    display: inline-block;
-    list-style: none;
-}
-
-header li:hover {
-    color: #262626;
-    background-color: #fff;
-    transition: border-radius 0.2s linear;
-    border-radius: 1rem;
-}
-
 .aboutMe {
     padding: 13rem 0rem;
     display: flex;
@@ -285,84 +244,7 @@ footer {
     margin-top: 3rem;
 }
 
-.substituteH2 {
-    display: none;
-}
-
-
-
-header.on .substituteH2 {
-    display: none;
-}
-
-header.on .mainH2{
-    display: none;
-}
-
-header.on .menuToggle {
-    position: fixed;
-    right: 3rem;
-    top: 3rem;
-}
-
-header.on .menuToggle .one {
-    transform: rotate(45deg) translate(7px, 7px);
-}
-
-header.on .menuToggle .two {
-    opacity: 0;
-}
-
-header.on .menuToggle .three {
-    transform: rotate(-45deg) translate(9px, -8px);
-}
-
-header.on {
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    text-align: center;
-}
-
-header.on nav {
-    display: initial;
-    z-index: 6;
-    color: #fff;
-}
-
-header.on nav ul {
-    display: flex;
-    flex-direction: column;
-}
-
-header.on nav ul a li {
-    color: #fff;
-    padding: 0.5rem 0rem;
-    text-align: center;
-    padding: 1rem;
-    background-color: #ff0047;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
-}
-
-body.on {
-    overflow: hidden;
-}
-
-body.on #scrollPath {
-    display: none;
-}
-
 @media screen and (max-width: 2800px){
-    body {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .contentContainer {
-        width: 80%;
-    }
-
     .frontEndContainer, .backEndContainer {
         grid-template-columns: repeat(auto-fit, minmax(38rem, 31rem));
         padding: 0.3rem;
@@ -378,16 +260,7 @@ body.on #scrollPath {
 }
 
 @media screen and (max-width: 2048px){
-    body {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .contentContainer {
-        width: 70%;
-    }
-
-    .frontEndContainer {
+    .frontEndContainer, .backEndContainer {
         grid-template-columns: repeat(auto-fit, minmax(38rem, 31rem));
     }
 
@@ -401,26 +274,8 @@ body.on #scrollPath {
 }
 
 @media screen and (max-width: 1631px){
-    body {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .contentContainer {
-        width: 100%;
-
-    }
-
     .card {
         font-size: 3rem;
-    }
-
-    .mainH2 {
-        display: none;
-    }
-
-    header {
-        justify-content: center;
     }
 
     .whoAmI {
@@ -428,14 +283,14 @@ body.on #scrollPath {
     }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1004px){
-    .frontEndContainer {
+@media screen and (min-width: 900px) and (max-width: 1023px){
+    .frontEndContainer, .backEndContainer {
         grid-template-columns: repeat(auto-fit, minmax(39rem, 27rem));
     }
 }
 
 @media screen and (min-width: 830px) and (max-width: 899px){
-    .frontEndContainer {
+    .frontEndContainer, .backEndContainer {
         grid-template-columns: repeat(auto-fit, minmax(31rem, 31rem));
     }
 
@@ -455,7 +310,7 @@ body.on #scrollPath {
 }
 
 @media screen and (min-width: 500px) and (max-width: 830px){
-    .frontEndContainer {
+    .frontEndContainer, .backEndContainer {
         grid-template-columns: repeat(auto-fit, minmax(29rem, 31rem));
         gap: initial;
         grid-row-gap: 2rem;
@@ -475,44 +330,10 @@ body.on #scrollPath {
         font-size: 2rem;
         margin: 0rem 1rem;    
     }
-
-    .mainH2 {
-        display: initial;
-    }
-
-    header {
-        justify-content: space-between;
-    }
-
-    header nav {
-        display: none;
-    }
-
-    .menuToggle {
-        width: 4rem;
-        height: 3rem;
-
-    }
-
-    .one, .two, .three {
-        background-color: #fff;
-        height: 0.5rem;
-        width: 100%;
-        margin: 0.6rem auto;
-        transition-duration: 0.5s;
-    }
 }
 
 @media screen and (max-width: 499px){
-    .substituteH2 {
-        display: initial;
-    }
-    
-    .mainH2 {
-        display: none;
-    }
-    
-    .frontEndContainer {
+    .frontEndContainer, .backEndContainer {
         grid-template-columns: repeat(auto-fit, minmax(29rem, 31rem));
 
     }
@@ -555,26 +376,5 @@ body.on #scrollPath {
 
     .conhecimentos h2, .containerStacks h3 {
         font-size: 3rem;
-    }
-
-    header {
-        justify-content: space-between;
-    }
-
-    header nav {
-        display: none;
-    }
-
-    .menuToggle {
-        width: 4rem;
-        height: 3rem;
-    }
-
-    .one, .two, .three {
-        background-color: #fff;
-        height: 0.5rem;
-        width: 100%;
-        margin: 0.6rem auto;
-        transition-duration: 0.5s;
     }
 }

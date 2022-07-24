@@ -11,13 +11,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/scrollBar.css" defer>
+    <link rel="stylesheet" href="../css/responsiveHeader.css">
     <script src="../javaScript/scrollBar.js" defer></script>
+    <script src="../javaScript/mobileMenu.js" defer></script>
+    <script src="../javaScript/aboutMe.js" defer></script>
 </head>
 <body>
     <div id="scrollBar"></div>
-    <div id="scrollPath"></div> 
+    <div id="scrollPath"></div>
+    <div class="contentContainer">
+        
     <header>
-        <a href="../../index.html"><h2>Victor Neves Rodrigues</h2></a>
+        <a href="../../index.html" class="substituteH2"><h2>Victor</h2></a>
+        <a href="../../index.html" class="mainH2"><h2>Victor Neves Rodrigues</h2></a>
+        <div class="menuToggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
         <nav>
             <ul>
                 <a href="../../index.html"><li>Ínicio</li></a>
@@ -28,5 +39,19 @@
             </ul>
         </nav>
     </header>
+    <section class="presentation">
+        <img src="../images/me.jpg" alt="foto minha">
+        <p>Meu nome é Victor, tenho 25 anos.<br/>Está pagina foi criada para me conhecerem um pouco melhor</p>
+    </section>
+    <aside>
+    <a href dinamic-nav="./aboutMe/jobs.html">Trabalhos</a>
+    <a href dinamic-nav="./aboutMe/historyWithProgramming.html">Transição de carreira</a>
+    <a href dinamic-nav="../html/aboutMe/jobsPlan.html">Plano de carreira</a>
+    </aside>
+
+    <section class="dinamicContainer" id="dinamicContainer">
+        
+    </section>
+    </div>
 </body>
 </html>
