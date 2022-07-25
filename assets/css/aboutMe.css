@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .presentation {
@@ -33,13 +34,12 @@ body {
     align-items: center;
     padding: 5rem 0rem 5rem;
     background-color: #161623aa;
-    margin-top: 1rem;
+    margin: 3rem 0rem;
     border-radius: 2rem;
     color: #fff;
 }
 
 .presentation img {
-    /* width: 30rem; */
     height: 30rem;
     border-radius: 2rem;
 }
@@ -131,4 +131,254 @@ aside a {
 [data-animation].animate {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+@media screen and (max-width: 2800px) and (min-width: 2049px){
+    .responsiveContainer {
+        width: 144rem;
+        max-width: 100%;
+    }
+
+    .presentation {
+        margin-top: 9rem;
+    }
+    
+    .presentation p {
+        font-size: 4rem;
+    }
+
+    aside {
+        padding: 7rem 0rem 1rem;
+    }
+
+    aside a {
+        font-size: 5rem;
+        padding: 0rem 2rem;
+    }
+
+    [data-animation] {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .historyCardContainer {
+        padding: 0rem 2rem 5rem 5rem;
+    }
+
+    .historyCardContainer h1 {
+        font-size: 4.5rem;
+    }
+
+    .historyCard p {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 2048px) and (min-width: 1632px){
+    .contentContainer {
+        width: 80%;
+    }
+
+    .presentation {
+        margin-top: 9rem;
+    }
+
+    .presentation p {
+        font-size: 3rem;
+    }
+
+    aside a {
+        font-size: 4rem;
+        padding: 1rem 2rem;
+    }
+
+    .historyCardContainer h1 {
+        font-size: 3.5rem;
+        font-size: 2.6rem;
+
+    }
+
+    .historyCard p {
+        font-size: 3rem;
+    }
+
+    [data-animation] {
+        opacity: initial;
+        transform: initial;
+    }
+}
+
+@media screen and (max-width: 1631px) and (min-width: 1024px){
+    .presentation p {
+        font-size: 2.5rem;
+       }
+    
+    aside a {
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    }
+
+    .historyCardContainer h1 {
+    font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 900px){
+   .presentation p {
+    font-size: 2rem;
+   }
+
+   aside a {
+    font-size: 2.5rem;
+    padding: 1rem 1rem;
+   }
+
+   .historyCard p {
+    font-size: 2.5rem;
+   }
+
+   .historyCardContainer h1 {
+    font-size: 3rem;
+}
+}
+
+@media screen and (max-width: 899px) and (min-width: 830px){
+    .presentation p {
+        font-size: 2rem;
+       }
+    
+    aside a {
+    font-size: 2.5rem;
+    padding: 1rem 1rem;
+    }
+
+    .historyCard p {
+        font-size: 2rem;
+    }
+
+    .historyCardContainer h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 830px){
+    .presentation {
+        width: 70%;
+        flex-direction: column;
+        padding: 2rem 0rem 1rem;
+    }
+    
+    .presentation p {
+        font-size: 2rem;
+        width: initial;
+    }
+
+    .presentation img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    
+    aside {
+        width: initial;
+        flex-direction: column;
+    }
+
+    aside a {
+        font-size: 2.5rem;
+        padding: 1rem 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .historyCard {
+        flex-direction: column;
+    }
+
+    .historyCard p {
+        font-size: 2rem;
+        width: initial;
+    }
+
+    .historyCardContainer {
+        margin: 13rem 0rem 0rem;
+        width: 80%;
+    }
+
+    .historyCardContainer h1 {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .historyCard img {
+        margin-right: initial;
+        width: 80%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .dinamicContainer {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 499px){
+    .presentation {
+        width: 80%;
+        flex-direction: column;
+        padding: 2rem 0rem 1rem;
+    }
+    
+    .presentation p {
+        font-size: 2rem;
+        width: initial;
+    }
+
+    .presentation img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    
+    aside {
+        width: initial;
+        flex-direction: column;
+    }
+
+    aside a {
+        font-size: 2rem;
+        padding: 1rem 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .historyCard {
+        flex-direction: column;
+    }
+
+    .historyCard p {
+        font-size: 2rem;
+        width: initial;
+    }
+
+    .historyCardContainer {
+        margin: 13rem 0rem 0rem;
+        width: 90%;
+    }
+
+    .historyCardContainer h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .historyCard img {
+        margin-right: initial;
+        width: 80%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .dinamicContainer {
+        align-items: center;
+    }
 }

@@ -7,14 +7,6 @@ function animateOnScroll () {
     })
 }
 
-window.addEventListener('scroll', () => {
-    animateOnScroll()
-})
-
-
-
-
-
 function assincLinks (){
 document.querySelectorAll('[dinamic-nav]').forEach(link => {
     const conteudo = document.getElementById('dinamicContainer')
@@ -29,3 +21,7 @@ document.querySelectorAll('[dinamic-nav]').forEach(link => {
 }
 
 assincLinks()
+
+window.addEventListener('scroll', () => {
+    animateOnScroll()
+})
