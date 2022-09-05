@@ -199,7 +199,7 @@ body {
 
 .card h4 {
     margin-bottom: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 4rem;
     margin: 1rem 0 2rem;
 
@@ -230,7 +230,7 @@ body {
 }
 
 .card img {
-    width: 50%;
+    height: 15rem;
     z-index: -1;
 }
 
@@ -239,7 +239,7 @@ footer {
     background-color: rgba(255, 255, 255, 0.1);
     color: #F0F8ee;
     padding: 1rem 0rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 3rem;
 }
@@ -275,7 +275,7 @@ footer {
 
 @media screen and (max-width: 1631px){
     .card {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .whoAmI {
