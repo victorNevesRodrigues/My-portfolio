@@ -13,5 +13,68 @@ html {
 body {
     width: 100vw;
     max-width: 100%;
-    background-color: #228B22;
+    overflow: hidden;
+    background-color: #189bcc;
+}
+
+.contact {
+    overflow: hidden;
+}
+
+.contactContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    padding-left: 12rem;
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: bold;
+    color: #333333;
+    font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    margin-top: 9rem;
+    letter-spacing: -0.06em;
+    margin-bottom: 5rem;
+}
+
+p {
+    font-size: 2.6rem;
+    color: #757575;
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif; 
+    line-height: 4rem;
+}
+
+.myPhoto {
+    height: 100%;
+    width: 60rem;
+    opacity: 0.9;
+}
+
+.messageMeContainer{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.messageMeContainer a img {
+    width: 5rem;
+    padding-right: 0.3rem;
+}
+
+.messageMeContainer a p {
+    color: #189bcc;
+}
+
+.messageMeContainer a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.messageMeContainer a:hover {
+    opacity: 0.8;
 }
