@@ -14,4 +14,36 @@ body {
     width: 100vw;
     max-width: 100%;
     background-color: #800020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+  font-size: 2.5rem;
+  background-color: aqua;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#dinamicContent {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.cardContainer {
+  display: flex;
+}
+
+.card {
+  width: 60rem;
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #dd5;
+  margin: 1rem;
 }
