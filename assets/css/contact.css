@@ -94,6 +94,10 @@ p {
     .contactContainer {
         padding-left: 15rem;
     }
+
+    body {
+        overflow: initial;
+    }
 }
 
 @media screen and (max-width: 899px) and (min-width: 830px){
@@ -108,6 +112,10 @@ p {
 
     .contactContainer {
         padding-left: 20rem;
+    }
+
+    body {
+        overflow: initial;
     }
 }
 
@@ -128,6 +136,10 @@ p {
         align-items: center;
         text-align: center;
         padding: 0rem 1rem;
+    }
+
+    body {
+        overflow: initial;
     }
 }
 
@@ -155,5 +167,9 @@ p {
         align-items: center;
         margin-top: 1rem;
         flex-direction: column;
+    }
+
+    body {
+        overflow: initial;
     }
 }
