@@ -38,12 +38,43 @@ body {
 
 .cardContainer {
   display: flex;
+  justify-content: center;
 }
 
 .card {
   width: 60rem;
   font-size: 2rem;
   padding: 2rem;
-  background-color: #dd5;
+  background-color: #EEEEEE;
   margin: 1rem;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.card h3 {
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 2rem;
+}
+
+.card p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card img {
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+.card a {
+  text-decoration: none;
+  padding: 1rem 0rem;
+}
+
+.links {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
 }
