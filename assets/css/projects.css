@@ -26,6 +26,26 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3rem;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  padding: 1rem 0 1.5rem;
+  color: #f0f8ee;
+}
+
+.container a {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 5rem;
+  font-weight: 700;
+  line-height: 3rem;
 }
 
 #dinamicContent {
@@ -39,13 +59,15 @@ body {
 .cardContainer {
   display: flex;
   justify-content: center;
+  background-color: #800020;
+  padding: 0rem 2rem;
 }
 
 .card {
   width: 60rem;
   font-size: 2rem;
   padding: 2rem;
-  background-color: #EEEEEE;
+  background-color: #ddd;
   margin: 1rem;
   overflow: hidden;
   border-radius: 2rem;
@@ -63,8 +85,8 @@ body {
 }
 
 .card img {
-  height: 20rem;
   border-radius: 1rem;
+  width: 90%;
 }
 
 .card a {
@@ -76,5 +98,26 @@ body {
   margin: auto;
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: #eee;
+  width: 20rem;
+  justify-content: center;
+  border-radius: 3rem;
+}
+
+.bar {
+  margin: 0rem 0.3rem;
+}
+
+.card a:hover {
+  opacity: 0.7;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #F0F8ee;
+  padding: 1rem 0rem;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 3rem;
 }
