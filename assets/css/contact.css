@@ -92,6 +92,12 @@ footer {
     margin-top: 3rem;
   }
 
+@media screen and (max-width: 2800px){
+  body {
+      align-items: center;
+  }
+} 
+
 @media screen and (max-width: 1023px) and (min-width: 900px){
     .myPhoto {
         width: 50rem;

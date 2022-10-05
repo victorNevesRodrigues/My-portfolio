@@ -44,7 +44,7 @@ aside div a {
 
 aside div a:hover {
     padding: 1.4rem;
-    background-color: #d9ded7;
+    background-color: #eee;
 }
 
 aside div h2 {
@@ -102,21 +102,22 @@ footer {
 
 @media screen and (max-width: 2800px) and (min-width: 2049px){
     #dinamicContent {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     aside {
-        font-size: 5rem;
+        font-size: 4rem;
+        padding: 1.5rem 4.3rem;
     }
 
     aside div a {
-        padding: 2rem 0;
+        padding: 1rem 0;
         line-height: 5rem;
     }
 
     aside div a:hover {
-        padding: 2.5rem;
-        background-color: #d9ded7;
+        padding: 1.5rem;
+        background-color: #eee;
     }
 
     #dinamicContent div {
@@ -149,7 +150,7 @@ footer {
 
     aside div a:hover {
         padding: 2rem;
-        background-color: #d9ded7;
+        background-color: #eee;
     }
 
     #dinamicContent div {
@@ -186,7 +187,7 @@ footer {
 
     aside div a:hover {
         padding: 1rem;
-        background-color: #d9ded7;
+        background-color: #eee;
     }
 
     #dinamicContent div {
@@ -223,7 +224,7 @@ footer {
 
     aside div a:hover {
         padding: 1rem;
-        background-color: #d9ded7;
+        background-color: #eee;
     }
 
     #dinamicContent div {
@@ -260,7 +261,7 @@ footer {
 
     aside div a:hover {
         padding: 1rem;
-        background-color: #d9ded7;
+        background-color: #eee;
     }
 
     #dinamicContent div {
@@ -310,7 +311,7 @@ footer {
 
     aside div a:hover {
         padding: 0.3rem;
-        background-color: #d9ded7;
+        background-color: #eee;
     }
 
     #dinamicContent div {
@@ -376,7 +377,7 @@ footer {
 
     aside div a:hover {
         padding: 1rem;
-        background-color: #d9ded7;
+        background-color: #eee;
     }
 
     footer {
