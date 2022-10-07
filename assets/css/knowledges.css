@@ -89,7 +89,7 @@ aside div h2 {
     color: #fffd;
     border-radius: 1rem;
     margin: 3rem 0;
-    padding: 1rem 0.5rem 0.5rem;
+    padding: 1rem 0.5rem 1rem;
 }
 
 footer {
@@ -122,6 +122,7 @@ footer {
 
     #dinamicContent div {
         border-radius: 6rem;
+        padding: 1rem 3rem 1rem;
     }
 
     footer {
@@ -155,6 +156,7 @@ footer {
 
     #dinamicContent div {
         border-radius: 6rem;
+        padding: 1rem 3rem 1rem;
     }
 
     footer {
@@ -192,6 +194,7 @@ footer {
 
     #dinamicContent div {
         border-radius: 6rem;
+        padding: 1rem 2rem;
     }
 
     footer {
@@ -229,6 +232,7 @@ footer {
 
     #dinamicContent div {
         border-radius: 6rem;
+        padding: 1rem 2rem;
     }
 
     footer {
@@ -266,6 +270,7 @@ footer {
 
     #dinamicContent div {
         border-radius: 6rem;
+        padding: 1rem 2rem;
     }
 
     footer {
@@ -316,6 +321,7 @@ footer {
 
     #dinamicContent div {
         border-radius: 6rem;
+        padding: 1rem 2rem;
     }
 
     footer {
@@ -369,6 +375,7 @@ footer {
 
     #dinamicContent div {
         border-radius: 6rem;
+        padding: 1rem 2rem;
     }
 
     #dinamicContent div h1 {

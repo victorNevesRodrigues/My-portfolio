@@ -201,46 +201,117 @@
 
 <div>
     <h3>Como colocar formularios no site</h3>
-    <h4>Tag iframe</h4>
-    <p>A tag iframe nos permite colocar sites ou trechos de sites dentro da nossa aplicação, ela deve ser usada com o atributo src.<br/>Podemos utilizar conteúdos de diversos sites como o youtube e google maps, porém tem sites que bloqueiam isso como por exemplo o site do google<br/>Assim como a tag vídeo a tag iframe tem diversos atributos de configuração, então eu prefiro olhar na documentação quando eu preciso de algum atributo do iframe.</p> 
+    <h3>Tag form</h3>
+    <p>A tag form delimita o inicio e fim do formulario, nela também definimos o metodo de envio do formulario e para onde enviaremos os dados do formulario</p>
+    <h4>Atributo action</h4>
+    <p>No atributo action você coloca a url de destino do formulario</p>
+    <h4>Atributo method</h4>
+    <p>O atributo method tem 2 valores get e post.<br/>utilizando get os dados do formulario serão mandados na url<br/>utilizando post os dados do formulario serão mandados no body</p>
+    <h4>você pode utilizar 4 tags principais dentro do form</h4>
+    <p>Sendo elas: input, button, select e textarea</p>
 </div>
 
+<div>
+    <h3>input</h3>
+    <p>A tag input serve para o usuario colocar informações, ela tem um atributo chamado type e de acordo com o valor colocado nela o tipo de input muda<br/>os principais valores são:<br/> text, password, checkbox, radio, file, submit, reset, date, tel e email</p>
+    <h4>text</h4>
+    <p>O valor text é o mais usado ele pode ser usado de diversas formas como por exemplo para criar um campo de login ou de pesquisa e etc...</p>
+    <h4>password</h4>
+    <p>Igual o text porém o que o usuario digitar nele não aparecera na tela, ex: campo de senha</p>
+    <h4>checkbox</h4>
+    <p>É com esse valor que criamos aquelas caixinhas de seleção dos formulario</p>
+    <h4>radio</h4>
+    <p>O valor radio é parecido com o checkbox porém no lugar de caixinha são bolinhas e geralmente com ele escolhemos uma ou outra opção.</p>
+    <h4>file</h4>
+    <p>Esse valor é o que permite que enviemos arquivos pelo formulario</p>
+    <h4>submit</h4>
+    <p>Esse valor cria um botão que quando clicado envia as informações do formulario, pode ser usada tanto na tag input como na button</p>
+    <h4>reset</h4>
+    <p>Esse valor reseta o formulario para o padrão dele ou seja apaga o que foi digitado e selecionado</p>
+    <h4>date</h4>
+    <p>Esse valor cria um campo onde você pode selecionar uma data</p>
+    <h4>tel</h4>
+    <p>Esse valor serve para quando acesarmos o formulario em um celular aparecer apenas o teclado numérico</p>
+    <h4>email</h4>
+    <p>Esse valor cria um campo de email que já vem com algumas checagens padrão de email</p>
+    <h4>A tag input tem diversos atributos que mudam o comportamento de cada um desses tipos de input, porém não vou falar deles aqui</h4>
+</div>
 
+<div>
+    <h3>button</h3>
+    <p>button em formularios serve principalmente para enviarmos os dados do formulario, utilizamos o type="submit" como atributo nele</p>
+</div>
 
-tag form
-atributos action e method - get e post
-tag input
-atributo type e valores:
-text, password, checkbox, radio, file, submit, reset
-atributos do input(estão no resumo)
-date, datetime-local, email, number, tel, range, search
-tag button
-atributos dela
-tag select
-tag option
-e atributos delas
-tag text area
+<div>
+    <h3>select</h3>
+    <p>essa tag cria uma caixa de seleção exemplo aquelas que você seleciona o estado<br/>dentro dela vai uma tag chamada option</p>
+    <h4>option</h4>
+    <p>A tag option cria os itens da caixa de seleção</p>
+    <h4>As tags select e option tem diversos atributos que mudam o comportamento delas assim como a tag input, porém não vou falar deles aqui</h4>
+</div>
 
-HTML Semantico
-tag header
-tag nav
-tag main
-tag footer
-tag section
-tag article
-tag aside
+<div>
+    <h3>textarea</h3>
+    <p>essa tag cria um campo de texto que permite multiplas linhas, geralmente usamos text para o assunto e o text area para o conteúdo.</p>
+</div>
 
-tags para estilização
-div
-span
+<div>
+    <h2>Tags para estilização</h2>
+</div>
 
-identificadores especiais
-class
-Id
+<div>
+    <h3>São tags que não tem significado semântico e servem para facilitar a manipulação e estilização dos elementos</h3>
+    <h3>div</h3>
+    <p>a tag div serve para criar um container que dividi o documento e para serem estilizadas pelo css e manipuladas pelo javascript</p>
+    <h3>span</h3>
+    <p>span serve para marcar uma parte de um texto ou uma parte de um elemento e poder estilizar ou manipular essa parte</p>
+</div>
 
-como adicionar css ao Html
-css inline
-css interno
-css externo
+<div>
+    <h2>Tags Semânticas</h2>
+</div>
 
-responsividade
+<div>
+    <h4>As tags semânticas são basicamente divs porém com significado semântico</h4>
+    <p>as 7 principais são: header, nav, main, foot, article, section e aside</p>
+    <h4>header</h4>
+    <p>o que vai dentro dela é o cabeçalho da pagina, geralmente vai a logo do site e a barra de navegação</p>
+    <h4>nav</h4>
+    <p>vem de navbar dentro dela você coloca os itens usados para navegar nas paginas do site o site</p>
+    <h4>main</h4>
+    <p>dentro dela vai o conteúdo principal da pagina</p>
+    <h4>footer</h4>
+    <p>rodapé da página fica no final da página geralmente vai informações de direitos autorais, informações de autoria etc...</p>
+    <h4>article</h4>
+    <p>utilizada para conteúdos que fazem sentido por si só ex uma noticia</p>
+    <h4>section</h4>
+    <p>serve para dividir a pagina em seções</p>
+    <h4>aside</h4>
+    <p>Utilizada para menus laterais</p>
+</div>
+
+<div>
+    <h2>Identificadores Especiais</h2>
+</div>
+
+<div>
+    <h4>Identificadores especiais servem para marcar elementos para poderem serem selecionados depois pelo css ou js</h4>
+    <h4>class</h4>
+    <p>class é um identificador utilizado para agrupar diversos elementos na mesma marcação e com isso qualquer mudança feita selecionando pela class se aplica a todos os elementos que tiverem a mesma class</p>
+    <h4>id</h4>
+    <p>id é um Identificador unico ou seja deve ser utilizado em apenas um elemento</p>
+</div>
+
+<div>
+    <h2>Como adiciona CSS ao HTML</h2>
+</div>
+
+<div>
+    <h4>CSS pode ser adicionado ao documento de 3 formas: inline, interno e externo</h4>
+    <h4>CSS inline</h4>
+    <p>Podemos adicionar css inline utilizando o atributo style no elemento que desejamos estilizar</p>
+    <h4>CSS interno</h4>
+    <p>Podemos adicionar css interno utilizando a tag style dentro do head do documento</p>
+    <h4>CSS externo</h4>
+    <p>Podemos adicionar css externo utilizando a tag link com os atributos rel e href</p>
+</div>
