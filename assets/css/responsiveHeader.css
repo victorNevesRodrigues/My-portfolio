@@ -114,7 +114,7 @@ body.on #scrollPath {
         justify-content: center;
     }
     
-    .contentContainer {
+    .headerContainer {
         width: 80%;
     }
 }
@@ -125,7 +125,7 @@ body.on #scrollPath {
         justify-content: center;
     }
     
-    .contentContainer {
+    .headerContainer {
         width: 70%;
     }
 }
@@ -136,7 +136,7 @@ body.on #scrollPath {
         justify-content: center;
     }
     
-    .contentContainer {
+    .headerContainer {
         width: 100%;
 
     }

@@ -131,7 +131,7 @@ footer {
 }
 
 @media screen and (max-width: 2048px) and (min-width: 1632px){
-    .contentContainer, #more {
+    .headerContainer, #more {
         width: 90%;
     }
 
@@ -165,7 +165,7 @@ footer {
 }
 
 @media screen and (max-width: 1631px) and (min-width: 1024px){
-    .contentContainer, #more {
+    .headerContainer, #more {
         width: 100%;
     }
 
@@ -203,7 +203,7 @@ footer {
 }
 
 @media screen and (max-width: 1023px) and (min-width: 900px){
-    .contentContainer, #more {
+    .headerContainer, #more {
         width: 100%;
     }
 
@@ -241,7 +241,7 @@ footer {
 }
 
 @media screen and (max-width: 899px) and (min-width: 830px){
-    .contentContainer, #more {
+    .headerContainer, #more {
         width: 100%;
     }
 
@@ -279,7 +279,7 @@ footer {
 }
 
 @media screen and (min-width: 500px) and (max-width: 830px){
-    .contentContainer, #more {
+    .headerContainer, #more {
         width: 100%;
     }
 
@@ -330,7 +330,7 @@ footer {
 }
 
 @media screen and (max-width: 499px){
-    .contentContainer, #more {
+    .headerContainer, #more {
         width: 100%;
     }
 
