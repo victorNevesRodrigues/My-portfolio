@@ -85,7 +85,6 @@ footer {
 }
 
 .card {
-  width: 60rem;
   height: 27.7rem;
   font-size: 2rem;
   background-color: #ddd;
@@ -147,9 +146,9 @@ footer {
   justify-content: center;
 }
 
-.card video {
+.card img {
   border-radius: 2rem;
-  width: 66rem;
+  width: 100%;
   max-height: 105%;
 }
 
@@ -161,4 +160,96 @@ footer {
   align-items: center;
   justify-content: space-around;
   transform: rotatex(-180deg);
+}
+
+@media (max-width: 1631px) {
+  #dinamicContent {
+    width: 95%;
+
+  }
+
+}
+
+@media (max-width: 1416px) {
+  #dinamicContent {
+    width: 95%;
+    grid-template-columns: repeat(auto-fit, 50rem);
+
+  }
+
+}
+
+@media (max-width: 1140px) {
+  #dinamicContent {
+    width: 95%;
+    grid-template-columns: repeat(auto-fit, 45rem);
+    column-gap: 2rem;
+
+  }
+
+  .card {
+    height: 22rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #dinamicContent {
+    width: 97%;
+    grid-template-columns: repeat(auto-fit, 43rem);
+    column-gap: 1rem;
+}
+
+  .card {
+    height: 22rem;
+  }
+}
+
+@media (max-width: 920px) {
+  #dinamicContent {
+    width: 97%;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    column-gap: 1rem;
+}
+
+  .card {
+    height: 22rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #dinamicContent {
+    width: 100%;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    max-width: 50rem;
+}
+
+  .card {
+    height: 22rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .card {
+    height: 15rem;
+    border-radius: 1rem;
+  }
+
+  .card img {
+    height: 15rem;
+    border-radius: 1rem;
+  }
+
+  .card h3 {
+    padding: 0;
+  }
+
+  .card p {
+    padding: 0;
+    font-size: 1.7rem;
+  }
+
+  .links {
+    height: 5rem;
+  }
 }
