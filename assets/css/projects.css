@@ -162,6 +162,10 @@ footer {
   transform: rotatex(-180deg);
 }
 
+iframe { 
+  width: 100%;
+}
+
 @media (max-width: 1631px) {
   #dinamicContent {
     width: 95%;
