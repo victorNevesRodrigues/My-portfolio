@@ -16,6 +16,10 @@ body {
     background-color: #4B0082;
 }
 
+header{
+    background-color: #0002 !important; 
+}
+
 .container {
     display: grid;
     grid-template-columns: minmax(24rem, 3fr) minmax(20rem, 7fr);
@@ -76,7 +80,6 @@ aside div h2 {
 
 #dinamicContent div p {
     margin: 0rem 0rem 2rem;
-    /* display: none; */
 }
 
 #dinamicContent h4 {
@@ -85,11 +88,11 @@ aside div h2 {
 }
 
 #dinamicContent div{
-    background-color: #161623aa;
+    background-color: #16162325;
     color: #fffd;
     border-radius: 1rem;
-    margin: 3rem 0;
     padding: 1rem 0.5rem 1rem;
+    margin: 0rem 0 3rem;
 }
 
 footer {
@@ -98,6 +101,32 @@ footer {
     color: #fff;
     background-color: #161623aa;
     text-align: center;
+}
+
+#dinamicContent.show .hide {
+    display: none;
+  }
+
+.optionContainer {
+    text-align: center;
+    margin: 4rem 0rem 0.5rem;
+}
+
+.optionContainer button {
+    color: #4B0082;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 5rem;
+    font-weight: bold;
+    border: none;
+    margin-right: 3rem;
+}
+
+.optionContainer button.selected {
+    background-color: #fffc;
 }
 
 @media screen and (max-width: 2800px) and (min-width: 2049px){
@@ -137,7 +166,11 @@ footer {
 
     #dinamicContent {
         font-size: 3rem;
-        padding: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    #dinamicContent.notProgramer {
+        font-size: 2rem;
     }
 
     aside {
