@@ -1,0 +1,137 @@
+<div>
+   <div>
+        <h3>Conceito de algoritmo</h3>
+        <h4>O que é um algoritmo</h4>
+        <p>Um algortmo é uma sequência finita e lógica de passos para realizar alguma tarefa ou resolver algum problema</p>
+    </div>
+
+    <div>
+        <h3>Estrutura Das CSS</h3>
+        <h4>Sintaxe das CSS</h4>
+        <p>A sintaxe das css são basicamente formadas de: <br/> Seletor {Propriedade: Valor;}</p>
+    </div>
+    
+    <div>
+    <h3>Seletores</h3>
+    <h4>O que são seletores</h4>
+    <p>Os seletores no css servem para selecionar os elementos criados com o html.<br/>Existem diversos seletores os principais são:</p>
+    <h4>Seletor através do nome da tag</h4>
+    <p>Selecionando através do nome da tag o estilo que você definir será aplicado para todas as tags com aquele nome</p>
+    <h4>Seletor de id</h4>
+    <p>Utilizando #nomeDoID selecionamos o elemento pelo id</p>
+    <h4>Seletor de class</h4>
+    <p>Utilizando .nomeDaClasse selecionamos os elementos pela classe e os estilos definidos vão ser aplicados a todos os items que tiverem esse classe</p>
+    <h4>Seletor global</h4>
+    <p>utilzando o seletor * os estilos definidos irão ser aplicados a todos os elementos</p>
+    <h4>Seletor de atributos</h4>
+    <p>utilizando [nomeDoAtributo] podemos selecionar todos os items com aquele atributo</p>
+    <h4>Selecionar tags aninhadas</h4>
+    <p>podemos selecionar tags que estão dentro de outras utilizando o espaço, exemplo: ol li {color:blue;} <br/>A cor azul será aplicada a todas as tags li, que estiverem dentro de uma tag ol</p>
+    <h4>Usar diversos tipos de seletores ao mesmo tempo</h4>
+    <p>Podemos usar varios seletores ao mesmo tempo utilizando a virgula como separador, e com isso o estilo definido será aplicado a todos os seletores, fazendo isso podemos economizar linhas de código e deixar o código mais legivel</p>
+    </div>
+ 
+    <div>
+        <h3>Propriedades</h3>
+        <h4>O que são propriedades</h4>
+        <p>Propriedades são caracteristicas que você pode atribuir a um elemento html por exemplo a cor, elas são formadas por propriedade e valor<br/>A propriedade diz qual a caracteristica que você quer mudar e o valor diz qual o valor daquela caracteristica que você quer mudar exemplo: <br/> caracteristica = cor | valor = verde</p>
+    </div>   
+
+    <div>
+        <h3>Herança</h3>
+        <h4>O que é herança</h4>
+        <p>Herança é o conceito das css que diz que quando a propriedade não for especificada para o elemento ela vai herdar esse propriedade do elemento pai, porém não são todas as propriedades que são herdadas do pai</p>
+    </div> 
+
+    <div>
+        <h3>Especificidade</h3>
+        <h4>O que é especificidade</h4>
+        <p>Especificidade é o conceito que diz como o navegador vai decidir qual propriedade é mais relevante no caso de haver um conflito de propriedades, ela funciona de acordo com os seletores e quanto mais especificos os seletores forem mais relevantes eles se tornam,exemplo:<br/>Se eu selecionar o elemento pelo nome da tag e definir a cor dele como rosa e selecionar o mesmo elemento pelo id dele e definir a cor como azul, o elemento ficará com a cor azul pelo fato de o id ser mais especifico que o nome da tag</p>
+        <h4>Niveis de especificidade</h4>
+        <p>Os niveis de especificidade são calculados da seguinte forma: css inline = 1000, ID = 100, Class = 10, Nome da Tag = 1, quando houver conflito entre os seletores o com maior pontuação será o escolhido</p>
+    </div> 
+
+    <div>
+        <h3>Cascata</h3>
+        <h4>O que é cascata</h4>
+        <p>Cascata é o conceito que diz quando houver conflito em uma propriedade de um elemento e os seletores desse elemento tiverem o mesmo peso vai valer o elemento que veio por ultimo no documento ou seja mais abaixo no documento.</p>
+    </div>
+    
+    <div>
+        <h3>Box Model</h3>
+        <h4>O que é box model</h4>
+        <p>Box model é um termo utilizado para falar sobre o design e layout, os elementos HTML são como se fossem caixas e essas caixas são formadas por conteúdo(content), espaçamento interno(padding), borda(border), espaçamento externo(margin)<br/></p>
+        <h4>Box Sizing</h4>
+        <p>Por padrão quando você define a altura e largura de um elemento utilizando as propriedades width e height elas não incluem a borda e o espaçamento interno o que acaba causando alguns problemas ao estilizar o elemento<br/>Box sizing veio para resolver isso, utilizando ele com o valor border-box o width e height que você definir vão incluir a borda e o pading no calculo, ou seja o valor que definir no height e width será o tamanho real que o elemento vai ter</p>
+    </div> 
+    </div>
+
+    <div>
+    <div>
+    <h2>Cores no CSS</h2>
+    </div>
+
+    <div>
+        <h3>Propriedades Para Manipular As Cores</h3>
+        <h4>Background</h4>
+        <p>Background é uma propriedade atalho que nos permite definir varias coisas do fundo do elemento, como por exemplo cores, tamanho, posição e etc...</p>
+        <h4>Background-color</h4>
+        <p>Essa propriedade define a cor do background</p>
+        <h4>Color</h4>
+        <p>Essa propriedade define a cor do conteúdo(texto)</p>
+    </div>
+
+    <div>
+        <h3>Sistemas De valores de Cores Das CSS</h3>
+        <h4>Nome da cor</h4>
+        <p>Podemos definir as cores atráves dos nomes delas em inglês, não uso muito porque o tom das cores pode variar de acordo com o navegador e tem apenas 140 cores, o que torna isso muito limitado</p>
+        <h4>RGB</h4>
+        <p>RGB forma as cores utilizando o cunjunto de cores vermelho, verde, azul com cada uma delas podendo ir de 0 a 255</p>
+        <h4>RGBA</h4>
+        <p>Funciona igual o RGB porém com o adendo do alfa o que nos permite controlar a opacidade da cor</p>
+        <h4>Hexadecimal</h4>
+        <p>Assim como o RGBA o hexadecimal é uma combinação de vermelho, verde, azul e alfa, porém cada uma das cores vai de 0 até f</p>
+    </div>
+    </div>
+
+    <div>
+        <div>
+        <h2>Unidades De Medida</h2>
+        </div>
+    
+        <div>
+            <h3>Fixas</h3>
+            <p>São recomendadas para impressão porém não são muito boas para telas, então eu praticamente não uso elas com excessão do pixel</p>
+            <h4>PX(Pixel)</h4>
+            <p>O tamanho do px varia de acordo com a densidade da tela, basicamente é a menor elemento de uma tela</p>
+            <h4>CM(Centimetros)</h4>
+            <p>Podemos definir os tamanhos dos elementos em centimetros</p>
+            <h4>MM(milimetros)</h4>
+            <p>Podemos definir os tamanhos dos elementos em milimetros</p>
+            <h4>IN(Polegadas)</h4>
+            <p>Podemos definir os tamanhos dos elementos em polegadas</p>
+            <h4>PT(Pontos)</h4>
+            <p>PT varia de acordo com a densidade da tela podendo ir de 1px até varios px</p>
+            <h4>PC(Picas)</h4>
+            <p>1 PC é equivalente a 12 PT</p>
+        </div>
+    
+        <div>
+            <h3>Relativas</h3>
+            <p>S ão recomendadas para impressão porém não são muito boas para telas, então eu praticamente não uso elas com excessão do pixel</p>
+            <h4>EM</h4>
+            <p>Podemos definir as cores atráves dos nomes delas em inglês, não uso muito porque o tom das cores pode variar de acordo com o navegador e tem apenas 140 cores, o que torna isso muito limitado</p>
+            <h4>REM</h4>
+            <p>RGB forma as cores utilizando o cunjunto de cores vermelho, verde, azul com cada uma delas podendo ir de 0 a 255</p>
+            <h4>VW</h4>
+            <p>Funciona igual o RGB porém com o adendo do alfa o que nos permite controlar a opacidade da cor</p>
+            <h4>VH</h4>
+            <p>Assim como o RGBA o hexadecimal é uma combinação de vermelho, verde, azul e alfa, porém cada uma das cores vai de 0 até f</p>
+            <h4>VMIN</h4>
+            <p>Assim como o RGBA o hexadecimal é uma combinação de vermelho, verde, azul e alfa, porém cada uma das cores vai de 0 até f</p>
+            <h4>VMAX</h4>
+            <p>Assim como o RGBA o hexadecimal é uma combinação de vermelho, verde, azul e alfa, porém cada uma das cores vai de 0 até f</p>
+            <h4>%</h4>
+            <p>Assim como o RGBA o hexadecimal é uma combinação de vermelho, verde, azul e alfa, porém cada uma das cores vai de 0 até f</p>
+        </div>
+        </div>
