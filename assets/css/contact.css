@@ -92,15 +92,28 @@ footer {
     margin-top: 3rem;
   }
 
-@media screen and (max-width: 2800px){
-  body {
+@media screen and (max-width: 3500px){
+  body, .contactContainer {
       align-items: center;
+  }
+  .contactContainer {
+    height: 100vh;
+  }
+
+  .myPhoto {
+    height: initial;
+    width: 84rem;
   }
 } 
 
-@media screen and (max-width: 1023px) and (min-width: 900px){
+@media screen and (max-width: 1349px) and (min-width: 900px){
+
+}
+
+@media screen and (max-width: 1350px) and (min-width: 900px){
     .myPhoto {
-        width: 50rem;
+        width: 59rem;
+        
     }
 
     h1 {
@@ -117,7 +130,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 899px) and (min-width: 830px){
+@media screen and (max-width: 1100px) and (min-width: 830px){
     .myPhoto {
         width: 47rem;
     }
@@ -128,7 +141,9 @@ footer {
     }
 
     .contactContainer {
-        padding-left: 20rem;
+        flex-direction: column;
+        text-align: center;
+        padding-left: initial;
     }
 
     body {
@@ -162,7 +177,7 @@ footer {
 
 @media screen and (max-width: 499px){
     .myPhoto {
-        width: 70vw;
+        width: 75vw;
         padding: 3rem 0rem 0rem 0rem;
     }
 

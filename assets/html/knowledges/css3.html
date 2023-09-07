@@ -66,6 +66,34 @@
         <p>Box model é um termo utilizado para falar sobre o design e layout, os elementos HTML são como se fossem caixas e essas caixas são formadas por conteúdo(content), espaçamento interno(padding), borda(border), espaçamento externo(margin)<br/></p>
         <h4>Box Sizing</h4>
         <p>Por padrão quando você define a altura e largura de um elemento utilizando as propriedades width e height elas não incluem a borda e o espaçamento interno o que acaba causando alguns problemas ao estilizar o elemento<br/>Box sizing veio para resolver isso, utilizando ele com o valor border-box o width e height que você definir vão incluir a borda e o pading no calculo, ou seja o valor que definir no height e width será o tamanho real que o elemento vai ter</p>
+        <h4>Margin</h4>
+        <p>essa propriedade define um espaçamento externo ou seja entre um elemento e outro.<br />
+            Margen tem 5 propriedades para setar ela que são:<br />
+            Margin-top que colocará uma margem apenas no topo ex:<br />
+            Margin-right que colocará margem apenas na direita ex:<br />
+            Margin-bottom que colocará margem apenas em baixo ex:<br />
+            Margin-left que colocará margem apenas a esquerda ex:<br />
+            Margin é um atalho para as 4 propriedades acima com ela você define a margem nos 4 lados ao mesmo tempo.
+        </p>
+        <h4>Padding</h4>
+        <p>Essa propriedade define um espaçamento interno ou seja entre o content e a border.<br />
+            Padding tem 5 propriedades para setar ele que são:<br />
+            Padding-top que colocará uma padding apenas no topo ex:<br />
+            Padding-right que colocará padding apenas na direita ex:<br />
+            Padding-bottom que colocará padding apenas em baixo ex:<br />
+            Padding-left que colocará padding apenas a esquerda ex:<br />
+            Padding é um atalho para as 4 propriedades acima com ela você define o padding nos 4 lados ao mesmo tempo.
+        </p>
+        <h4>Border</h4>
+        <p>Border coloca uma borda que envolve o conteúdo e o padding.<br />
+            border-top acrescenta uma borda ao top(os parâmetros de width, style e color devem ser colocados)<br />
+            border-right acrescenta uma borda a direita(os parâmetros de width, style e color devem ser colocados)<br />
+            border-bottom acrescenta uma borda ao bottom(os parâmetros de width, style e color devem ser colocados)<br />
+            border-left acrescenta uma borda a esquerda(os parâmetros de width, style e color devem ser colocados)<br />
+            border é um atalho para as propriedades acima e com essa propriedade podemos definir o tamanho, o tipo e a cor das 4 bordas ao mesmo tempo 
+        </p>
+        <h4>Border-radius</h4>
+        <p>Define o arredondamento das bordas, podemos definir de todas as bordas ou dos lados especificos que queremos</p>
     </div> 
 
     <div>
@@ -117,19 +145,109 @@
     
         <div>
             <h3>Relativas</h3>
-            <p>S ão recomendadas para impressão porém não são muito boas para telas, então eu praticamente não uso elas com excessão do pixel</p>
+            <p>São recomendadas para impressão porém não são muito boas para telas, então eu praticamente não uso elas com excessão do pixel</p>
             <h4>EM</h4>
-            <p>Podemos definir as cores atráves dos nomes delas em inglês, não uso muito porque o tom das cores pode variar de acordo com o navegador e tem apenas 140 cores, o que torna isso muito limitado</p>
+            <p>Essa unidade é igual ao tamanho da fonte no elemento que ela está sendo colocada</p>
             <h4>REM</h4>
-            <p>RGB forma as cores utilizando o cunjunto de cores vermelho, verde, azul com cada uma delas podendo ir de 0 a 255</p>
+            <p>Rem é igual o em, porém ela pega o tamanho da fonte da tag raiz ao invés da tag atual</p>
             <h4>VW</h4>
-            <p>Funciona igual o RGB porém com o adendo do alfa o que nos permite controlar a opacidade da cor</p>
+            <p>Vw é igual a 1% da largura da janela do navegador</p>
             <h4>VH</h4>
-            <p>Assim como o RGBA o hexadecimal é uma combinação de vermelho, verde, azul e alfa, porém cada uma das cores vai de 0 até f</p>
+            <p>Vh é igual a 1% da altura da janela do navegador</p>
             <h4>VMIN</h4>
-            <p>Assim como o RGBA o hexadecimal é uma combinação de vermelho, verde, azul e alfa, porém cada uma das cores vai de 0 até f</p>
+            <p>Vmin é igual a 1% do menor elemento da janela do navegador(altura/largura), ou seja se a altura for o menor o vmin utilizará o valor dela</p>
             <h4>VMAX</h4>
-            <p>Assim como o RGBA o hexadecimal é uma combinação de vermelho, verde, azul e alfa, porém cada uma das cores vai de 0 até f</p>
+            <p>Vmax é igual a 1% do maior elemento da janela do navegador(altura/largura), ou seja se a altura for maior que a largura o vmax utilizará o valor dela</p>
             <h4>%</h4>
-            <p>Assim como o RGBA o hexadecimal é uma combinação de vermelho, verde, azul e alfa, porém cada uma das cores vai de 0 até f</p>
+            <p>% é relativo ao tamanho do elemento pai</p>
         </div>
+
+        <div>
+            <h2>Fontes</h2>
+            </div>
+        
+            <div>
+                <h3>Propriedades Para Manipular fontes</h3>
+                <h4>Font-family</h4>
+                <p>Font-family altera a fonte padrão do elemento para a que você escolher.</p>
+                <h4>Font-style</h4>
+                <p>Define o estilo da fonte, essa propriedade tem dois valores: normal, italic.<br />
+                    Normal a fonte fica reta<br />
+                    Italic a fonte fica inclinada
+                    </p>
+                <h4>Font-size</h4>
+                <p>Controla o tamanho da fonte.</p>
+                <h4>Font-weight</h4>
+                <p>Controla o "peso" da fonte, da para deixar ela mais grossa(bold) ou mais fina.</p>
+                
+            </div>
+        
+            <div>
+                <h3>Propriedades Para alterar textos</h3>
+                <h4>Word-wrap</h4>
+                <p>Essa propriedade faz com que o texto seja quebrado para próxima linha se ele ultrapassar o tamanho do container.</p>
+                <h4>Text-Align</h4>
+                <p>Text-align define o alinhamento do texto<br/>Essa propriedade tem 4 valores:<br /> 
+                    left - que alinha o texto a esquerda<br />
+                    right - que alinha o texto a direita<br />
+                    center - que centraliza o texto<br />
+                    justify - que faz o texto preencher todo espaço da direita e esquerda
+                    </p>
+                <h4>Text-transform</h4>
+                <p>Text-transform como o nome diz tranforma o texto.<br />
+                    essa propriedade tem 3 valores:<br />
+                    uppercase - transforma todo o texto em letra maiúscula.<br />
+                    lowercase - transforma todo o texto em letra minúscula.<br />
+                    capitalize - transforma a primeira letra de cada palavra em letra maiúscula.</p>
+                <h4>Text-indent</h4>
+                <p>Essa propriedade faz uma indentação no começo de cada parágrafo do texto ou seja da um espaço do tamanho que você definiu.</p>
+                <h4>Text-decoration</h4>
+                <p>Essa propriedade tem 4 parâmetros:<br />
+                    Underline - coloca uma linha abaixo do texto<br />
+                    Overline - coloca uma linha em acima do texto<br />
+                    Line-through - coloca uma linha no meio do texto<br />
+                    none - retira qualquer text-decoration que houver</p>
+                    <h4>Letter-spacing</h4>
+                    <p>como o nome sugere essa propriedade vai definir o espaço entre as letras.</p>
+                    <h4>Word-spacing</h4>
+                    <p>Essa propriedade define o espaço entre uma palavra e outra</p>
+                    <h4>Line-height</h4>
+                    <p>Como o nome sugere essa propriedade define a altura da linha ou seja o quanto uma vai ficar espaçada da outra em altura.</p>
+                    <h4>Text-shadow</h4>
+                    <p>cria uma sombra no texto, nela você vai colocar 4 parâmetros:<br />
+                        primeiro será o quão a direita do texto a sombra irá ficar<br />
+                        segundo o quão abaixo do texto a sombra irá ficar<br />
+                        terceiro o nível de desfoque da sombra(efeito blur)<br />
+                        quarta é a cor da sombra</p>
+            </div>
+
+            <div>
+                <h3>Display</h3>
+                <p>Essa propriedade define como um elemento é exibido na tela</p>    
+                <h4>none</h4>
+                <p>O elemento irá sumir, como se nunca tivesse sido setado, porém ainda estará no código fonte</p>
+                <h4>Block</h4>
+                <p>O elemento vai ocupar todo o espaço horizontal da linha, width e height podem ser mudados</p>
+                <h4>inline</h4>
+                <p>Os elementos com display inline são renderizados em uma única linha, ocupando apenas o espaço necessário para seu conteúdo.<br />
+                    width e height não podem ser mudados e eles vão ser de acordo com o tamanho do conteúdo</p>
+                <h4>inline-block</h4>
+                <p>Igual o inline, porém o width e height podem ser alterados</p>
+                <h4>Flex e Grid</h4>
+                <p>Falo sobre os dois mais abaixo</p>
+            </div>
+            
+            <div>
+                <h3>Imagens como Background</h3>
+                <p>Podemos utilizar imagens como background de elementos ao invés de apenas cores.</p>    
+                <h4>Background</h4>
+                <p></p>
+                <h4>Background-repeat</h4>
+                <p></p>
+                <h4>Background-size</h4>
+                <p></p>
+                <h4>Background-position</h4>
+                <p></p>
+                <h4>Background-attachement</h4>
+                <p></p>
+            </div>
