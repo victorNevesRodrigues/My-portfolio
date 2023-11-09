@@ -239,15 +239,57 @@
             
             <div>
                 <h3>Imagens como Background</h3>
-                <p>Podemos utilizar imagens como background de elementos ao invés de apenas cores.</p>    
+                <p>Podemos utilizar imagens como background de elementos ao invés de cores.</p>    
                 <h4>Background</h4>
-                <p></p>
+                <p>Background é uma shorthand property que nos permite definir varias coisas do background em uma só propriedade ex:<br />
+                Definir a cor de fundo do background que pode ser uma cor ou um gradiente, definir imagem como background, posição, tamanho e etc...
+                </p>
+                <h4>Background-image</h4>
+                <p>Essa propriedade define uma imagem como background do elemento</p>
                 <h4>Background-repeat</h4>
-                <p></p>
+                <p>Essa propriedade define se a imagem vai ser repetida caso ela seja menor que o container, também podemos definir o eixo que queremos repetir ou não repetir</p>
                 <h4>Background-size</h4>
-                <p></p>
+                <p>Essa propriedade define o tamanho da imagem de background</p>
                 <h4>Background-position</h4>
-                <p></p>
-                <h4>Background-attachement</h4>
-                <p></p>
+                <p>Essa propriedade define a posição inicial da imagem</p>
+                <h4>Background-attachment</h4>
+                <p>Essa propriedade define se a imagem de background vai rolar junto com o resto da pagina ou se ela ficará fixa, isso é muito utilizado para fazer o efeito parallax</p>
+            </div>
+        
+            <div>
+                <h2>Layout</h2>
+            </div>
+
+            <div>
+                <h3>Float</h3>
+                <p>Antigamente bastante usado para controle do layout, porém com o surgimento do flexbox e do grid se tornou bem menos relevânte na maioria dos casos</p>    
+                <h3>Z-index</h3>
+                <p>Z-index define em qual camada o elemento irá ficar</p>
+                <h3>Position</h3>
+                <p>Position define o tipo de metodo de posicionamento que o elemento vai ter, e alguns valores fazem o elemento ir para outra camada, os 5 principais valores são:</p>
+                <h4>static</h4>
+                <p>Elemento padrão, o elemento vai ser renderizado como eles aparecem no documento</p>
+                <h4>absolute</h4>
+                <p>O elemento vai ser posicionado relativo ao elemento pai, caso este não seja static e assim por diante até chegar no body</p>
+                <h4>relative</h4>
+                <p>O elemento é relativo a posição inicial dele</p>
+                <h4>fixed</h4>
+                <p>O elemento é posicionado de acordo com a janela do navegador, e ele ficará sempre fixo naquele lugar mesmo que você rolar a pagina</p>
+                <h4>sticky</h4>
+                <p>No sticky o elemento é posicionado de acordo com a posição do scroll do usuário</p>
+            </div>
+            <div>
+                <h3>Pseudo elementos</h3>
+                <p>Pseudo elementos servem para estilizar uma parte de um elemento no total são 6, porém os 2 que são relevantes são:</p>
+                <h4>::after</h4>
+                <p>Usando after em conjunto com a propriedade content podemos inserir algum conteudo após o elemento</p>
+                <h4>::before</h4>
+                <p>Usando before em conjunto com a propriedade content podemos inserir algum conteudo antes do elemento</p>
+                
+                <h3>Pseudo classes</h3>
+                <p>Pseudo classes são seletores no CSS que permitem aplicar estilos a elementos com base em eventos, estados específicos ou características.</p>    
+                <h4>:active</h4>
+                <p>Essa pseudo classe é ativada durante momento que o usuário clicar em algo e manter o botão pressionado, mais utilizado em links</p>
+                <h4>:checked</h4>
+                <p>Pseudo-classe usada para selecionar elementos de formulário que estão marcados, como caixas de seleção ou botões de rádio.</p>
             </div>
