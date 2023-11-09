@@ -74,6 +74,14 @@ footer {
 
 /* aqui acaba projects e começa as dinamicas */
 
+.containerSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin: 2rem 0rem 2rem;
+}
+
 .containerProject {
   display: flex;
   width: 100rem;
@@ -93,7 +101,7 @@ footer {
 
 .imgContent {
   position: absolute;
-  background-image: url(../images/projects/easy2.png);
+  background-image: url(../images/projects/easy.png);
   background-size: cover;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -102,6 +110,26 @@ footer {
   width: 46.9rem;
   height: 25.8rem;
   border-radius: 0.5rem;
+}
+
+.ic2 {
+  background-image: url(../images/projects/captura.PNG);
+}
+
+.ic3 {
+  background-image: url(../images/projects/login.PNG);
+}
+
+.ic4 {
+  background-image: url(../images/projects/urban.PNG);
+}
+
+.ic5 {
+  background-image: url(../images/projects/places.PNG);
+}
+
+.ic6 {
+  background-image: url(../images/projects/rain.PNG);
 }
 
 .imgContainerSmall {
@@ -125,6 +153,26 @@ footer {
   background-size: cover;
   background-position-x: center;
   border-radius: 1.7rem;
+}
+
+.ic2Small {
+  background-image: url(../images/projects/capturaSmall.PNG);
+}
+
+.ic3Small {
+  background-image: url(../images/projects/loginSmall.PNG);
+}
+
+.ic4Small {
+  background-image: url(../images/projects/urbanSmall.PNG);
+}
+
+.ic5Small {
+  background-image: url(../images/projects/placesSmall.PNG);
+}
+
+.ic6Small {
+  background-image: url(../images/projects/rainSmall.PNG);
 }
 
 .links {
@@ -151,6 +199,11 @@ p {
 
 h3 {
   font-size: 3rem;
+}
+
+hr {
+  width: calc(100% - 10vw);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* media queries */
@@ -211,14 +264,10 @@ h3 {
   }
 
   .imgContentSmall {
-    position: absolute;
     top: 0.6rem;
     left: 0.6rem;
     width: 11.4rem;
     height: 20rem;
-    background-image: url(../images/projects/easySmall.PNG);
-    background-size: cover;
-    background-position-x: center;
     border-radius: 1.3rem;
   }
 
@@ -273,14 +322,10 @@ h3 {
   }
 
   .imgContentSmall {
-    position: absolute;
     top: 0.8rem;
     left: 0.9rem;
     width: 14.4rem;
     height: 28.6rem;
-    background-image: url(../images/projects/easySmall.PNG);
-    background-size: cover;
-    background-position-x: center;
     border-radius: 1.7rem;
   }
 
@@ -294,7 +339,7 @@ h3 {
   }
 
   p {
-    padding: 0rem;
+    padding: 1rem;
   }
 }
 
@@ -341,14 +386,10 @@ h3 {
   }
 
   .imgContentSmall {
-    position: absolute;
     top: 0.8rem;
     left: 0.9rem;
     width: 14.4rem;
     height: 28.6rem;
-    background-image: url(../images/projects/easySmall.PNG);
-    background-size: cover;
-    background-position-x: center;
     border-radius: 1.7rem;
   }
 
